@@ -46,7 +46,7 @@ function my_keydown(e)
     keyPressed=e.keyCode;
     console.log(keyPressed);
 
-    if (e.shiftKey==true && keypressed=='80')
+    if (e.shiftKey==true && keyPressed=='80')
 {
     console.log("P+Shift are pressed together")
     block_image_width=block_image_width+10;
@@ -54,7 +54,7 @@ function my_keydown(e)
     document.getElementById("current_width").innerHTML=block_image_width;
     document.getElementById("current_height").innerHTML=block_image_height;
 }
-if (e.shiftKey==true && keypressed=='77')
+if (e.shiftKey==true && keyPressed=='77')
 {
     console.log("M+Shift are pressed together")
     block_image_width=block_image_width-10;
@@ -84,7 +84,7 @@ if (e.shiftKey==true && keypressed=='77')
     }
     if (keyPressed=='66')
     {
-        new_image("building.png")
+        new_image("black_widow.png")
         console.log("b");
     }
     if (keyPressed=='67')
@@ -104,7 +104,7 @@ if (e.shiftKey==true && keypressed=='77')
     }
     if (keyPressed=='83')
     {
-        new_image("spider.png")
+        new_image("spider_man.png")
         console.log("s");
     }
     if (keyPressed=='84')
@@ -116,6 +116,21 @@ if (e.shiftKey==true && keypressed=='77')
     {
         new_image("thor.png")
         console.log("r");
+    }
+    if (keyPressed=='65')
+    {
+        new_image("ant_man.png")
+        console.log("a");
+    }
+    if (keyPressed=='85')
+    {
+        new_image("ultron.png")
+        console.log("u");
+    }
+    if (keyPressed=='80')
+    {
+        new_image("black_panther.png")
+        console.log("p");
     }
 }
 
